@@ -12,7 +12,7 @@ server.app.use(bodyParser.urlencoded({extended:true}));
 server.app.use('/',defaultRoutes);
 server.app.use('/smartphone',smartphoneRoutes);
 
-mongoose.connect('mongodb://localhost:27017/smartphonesDb',(error)=>{
+mongoose.connect('mongodb+srv://usr_smartphone:<comecaca88A>@cluster0.dvq2u4m.mongodb.net/smartphonesDb',(error)=>{
     if(error){
         throw error;
     }
