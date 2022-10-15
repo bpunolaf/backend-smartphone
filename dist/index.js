@@ -13,7 +13,7 @@ server.app.use(body_parser_1.default.json());
 server.app.use(body_parser_1.default.urlencoded({ extended: true }));
 server.app.use('/', defaul_routes_1.default);
 server.app.use('/smartphone', smartphone_routes_1.default);
-mongoose_1.default.connect('mongodb://localhost:27017/smartphonesDb', (error) => {
+mongoose_1.default.connect('mongodb+srv://usr_smartphone:brian1213@cluster0.dvq2u4m.mongodb.net/smartphonesDb', (error) => {
     if (error) {
         throw error;
     }
